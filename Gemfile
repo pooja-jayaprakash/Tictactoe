@@ -8,6 +8,9 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 
 gem 'omniauth'
+
+gem 'omniauth-google'
+
 gem 'omniauth-google-oauth2'
 
 # Gems used only for assets and not required
