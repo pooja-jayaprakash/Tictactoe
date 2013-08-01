@@ -2,6 +2,7 @@ Ani::Application.routes.draw do
 
 
   match "/auth/:provider/callback" => "tictactoe#signin", :via => :get
+  match "/home" => "tictactoe#home"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
