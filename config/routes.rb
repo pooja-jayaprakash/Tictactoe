@@ -1,6 +1,8 @@
 Ani::Application.routes.draw do
-  get "tictactoe/home"
 
+
+  match "/auth/:provider/callback" => "tictactoe#signin", :via => :get
+  match "/home" => "tictactoe#home"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -50,7 +52,7 @@ Ani::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'tictactoe#home'
+  root :to => 'tictactoe#splash'
 
   # See how all your routes lay out with "rake routes"
 
