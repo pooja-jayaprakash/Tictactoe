@@ -61,7 +61,7 @@ function canvasClicked(canvasNumber){
 	
 	}
 	else{
-		alert("THAT SPACE IS ALREADY OCCUPIED WITH YOUR HEART!");
+		alert("THAT SPACE IS ALREADY OCCUPIED!");
 	}
 
 }
@@ -78,13 +78,12 @@ function checkForWinners(symbol){
 }
 
 function playAgain(){
-	y=confirm("PLAY AGAIN?");
+	y=confirm("Would you like to play again?");
 	if(y==true){
-		alert("OKAY! ^^/>");
 		location.reload(true);
 	}
 	else{
-		alert("SO LONG,SUCKER!");
+		alert("Bubye!");
 }
 
 }
