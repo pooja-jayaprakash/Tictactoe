@@ -1,41 +1,38 @@
 
 <center>
+	
 	<h3>Hello <%= session[:name] %></h3>
+	
 	<br />
+	
 	<h3>You have played this game <%= session[:num_login] %> times</h3>
-</center>	
-<Center>
 
-<Form>
-<Input Type="Button" Title="Click here to play again" Name="beurten" Width="300px" Class="knopje" Value="Player 1" onClick="wie = 'Player 1'; initieer()">
-<Table CellPadding="0" CellSpacing="0" Border="0">
-<script>
-for (i = 1; i < 10; i++) {
-if (i % 3 == 1) {document.write('<Tr>');}
-document.write('<Td><Input Type="Button" Name="' + i + '" Value="    " Class="blokje" onClick="wijzig(this.form,this)"></Td>');
-if (i % 3 == 0) {document.write('</Tr>');}
-}
+</center>
+	
+<center>
 
-timerID = xtal = ytal = ztal = auto = 0;
-wie = 'Player 1';
-</script>
+<div id ="box">
 
+    <h1>THE</h1><h2> VERY BASIC</h2><h3> TIC - TAC - TOE!</h3>
 
-</Table>
+    <canvas id = "canvas1"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(1)"></canvas>
 
-<Input Type="CheckBox" Title="Click here to change from 2 players or computergame" Name="automaat" Value="2 players" Id="autmat" onClick="if (this.value == 'Computer') {this.value = '2 players'; auto = 0} else {this.value = 'Computer'; auto = 1}; wie = 'Player 1'; initieer();"><Label For="autmat">against the computer</Label>
+    <canvas id = "canvas2"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(2)"></canvas>
 
-<Table CellPadding="0" CellSpacing="0" Border="1">
-<Tr BgColor="Silver">
-<Td Align="Center"> Player 1 </Td>
-<Td Align="Center"> Player 2 </Td>
-<Td Align="Center"> Remise </Td>
-</Tr>
-<Tr BgColor="Silver">
-<Td Align="Center"><Input Style="BackGround-Color:Transparent;Border:Solid 0px;Text-Align:Center" Type="Text" Size="8" ReadOnly Title="Player 1" Name="speler1" Value="0"></Td>
-<Td Align="Center"><Input Style="BackGround-Color:Transparent;Border:Solid 0px;Text-Align:Center" Type="Text" Size="8" ReadOnly Title="Player 2" Name="speler2" Value="0"></Td>
-<Td Align="Center"><Input Style="BackGround-Color:Transparent;Border:Solid 0px;Text-Align:Center" Type="Text" Size="8" ReadOnly Title="Remise" Name="remise" Value="0"></Td>
-</Tr>
-</Table>
-</Form>
-</Center>
+    <canvas id = "canvas3"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(3)"></canvas><br/>
+
+    <canvas id = "canvas4"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(4)"></canvas>
+
+    <canvas id = "canvas5"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(5)"></canvas>
+
+    <canvas id = "canvas6"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(6)"></canvas><br/>
+
+    <canvas id = "canvas7"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(7)"></canvas>
+
+    <canvas id = "canvas8"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(8)"></canvas>
+
+    <canvas id = "canvas9"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(9)"></canvas>
+
+</div>
+
+</center>
