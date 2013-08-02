@@ -1,25 +1,32 @@
-<body style="background-image:url('black.jpeg');">
+
 <center>
 	<h3>Hello <%= session[:name] %></h3>
 	<br />
 	<h3>You have played this game <%= session[:num_login] %> times</h3>
 </center>	
-<center>
+<Center>
 
-<p class="outset">
-<div style="margin-top:200px";>
+<Form>
+<Input Type="Button" Title="Click here to play again" Name="beurten" Width="300px" Class="knopje" Value="Player 1" onClick="wie = 'Player 1'; initieer()">
+<Table CellPadding="0" CellSpacing="0" Border="0">
 
-           <h1>The</h1><h2>Very Basic</h2><h3>Tic Tac Toe</h3>
-           <canvas id ="canvas1" width="150" height="150"  style="border:5px solid white" onclick="canvasClicked(1)"></canvas>
-           <canvas id ="canvas2" width="150" height="150" style="border:5px solid white" onclick="canvasClicked(2)"></canvas>
-           <canvas id ="canvas3" width="150" height="150" style="border:5px solid white" onclick="canvasClicked(3)"></canvas><br></br>
-           <canvas id ="canvas4" width="150" height="150" style="border:5px solid white" onclick="canvasClicked(4)"></canvas>
-           <canvas id ="canvas5" width="150" height="150" style="border:5px solid white" onclick="canvasClicked(5)"></canvas>
-           <canvas id ="canvas6" width="150" height="150" style="border:5px solid white" onclick="canvasClicked(6)"></canvas><br></br>
-           <canvas id ="canvas7" width="150" height="150" style="border:5px solid white" onclick="canvasClicked(7)"></canvas>
-           <canvas id ="canvas8" width="150" height="150" style="border:5px solid white" onclick="canvasClicked(8)"></canvas>
-           <canvas id ="canvas9" width="150" height="150" style="border:5px solid white" onclick="canvasClicked(9)"></canvas>
-    </div>
-</center>
-</p>
-         </body>
+
+
+</Table>
+
+<Input Type="CheckBox" Title="Click here to change from 2 players or computergame" Name="automaat" Value="2 players" Id="autmat" onClick="if (this.value == 'Computer') {this.value = '2 players'; auto = 0} else {this.value = 'Computer'; auto = 1}; wie = 'Player 1'; initieer();"><Label For="autmat">against the computer</Label>
+
+<Table CellPadding="0" CellSpacing="0" Border="1">
+<Tr BgColor="Silver">
+<Td Align="Center"> Player 1 </Td>
+<Td Align="Center"> Player 2 </Td>
+<Td Align="Center"> Remise </Td>
+</Tr>
+<Tr BgColor="Silver">
+<Td Align="Center"><Input Style="BackGround-Color:Transparent;Border:Solid 0px;Text-Align:Center" Type="Text" Size="8" ReadOnly Title="Player 1" Name="speler1" Value="0"></Td>
+<Td Align="Center"><Input Style="BackGround-Color:Transparent;Border:Solid 0px;Text-Align:Center" Type="Text" Size="8" ReadOnly Title="Player 2" Name="speler2" Value="0"></Td>
+<Td Align="Center"><Input Style="BackGround-Color:Transparent;Border:Solid 0px;Text-Align:Center" Type="Text" Size="8" ReadOnly Title="Remise" Name="remise" Value="0"></Td>
+</Tr>
+</Table>
+</Form>
+</Center>
