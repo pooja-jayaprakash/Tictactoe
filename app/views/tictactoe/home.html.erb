@@ -9,7 +9,16 @@
 <Form>
 <Input Type="Button" Title="Click here to play again" Name="beurten" Width="300px" Class="knopje" Value="Player 1" onClick="wie = 'Player 1'; initieer()">
 <Table CellPadding="0" CellSpacing="0" Border="0">
+<script>
+for (i = 1; i < 10; i++) {
+if (i % 3 == 1) {document.write('<Tr>');}
+document.write('<Td><Input Type="Button" Name="' + i + '" Value="    " Class="blokje" onClick="wijzig(this.form,this)"></Td>');
+if (i % 3 == 0) {document.write('</Tr>');}
+}
 
+timerID = xtal = ytal = ztal = auto = 0;
+wie = 'Player 1';
+</script>
 
 
 </Table>

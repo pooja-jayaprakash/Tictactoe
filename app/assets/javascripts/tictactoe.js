@@ -1,9 +1,3 @@
-for (i = 1; i < 10; i++) {
-if (i % 3 == 1) {document.write('<Tr>');}
-document.write('<Td><Input Type="Button" Name="' + i + '" Value="    " Class="blokje" onClick="wijzig(this.form,this)"></Td>');
-if (i % 3 == 0) {document.write('</Tr>');}
-}
-
 timerID = xtal = ytal = ztal = auto = 0;
 wie = 'Player 1';
 
@@ -188,6 +182,3 @@ function wijzig(form,element){
 }
 
 initieer();
-
-
-</Script>
