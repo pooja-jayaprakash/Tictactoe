@@ -1,5 +1,5 @@
-OmniAuth.config.full_host = "http://localhost:3000/"
+OmniAuth.config.full_host = "http://simpletictactoe.herokuapp.com"
  
 Rails.application.config.middleware.use OmniAuth::Builder do
- provider :google, '562923144800.apps.googleusercontent.com', 'bw4m06pip5OsGhO0GCIH56DI', {:approval_prompt => '', :scope => 'https://www.googleapis.com/auth/userinfo.profile'}
+ provider :google, '562923144800-jufq3veql293al8979nqmvmm5nqpo1rf.apps.googleusercontent.com', 'H12l_iBjiDpUQuP-qbyA731c', {:approval_prompt => 'auto', :scope => 'https://www.googleapis.com/auth/userinfo.profile'}
 end
