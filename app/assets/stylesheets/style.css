@@ -42,6 +42,12 @@ canvas{
 	
 }
 
+.canvasbox {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+}
+
 @-webkit-keyframes canvasAnimation {
 
 	0%   {-webkit-transform:rotate(90deg);left:0px; top:0px;}
